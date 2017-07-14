@@ -1,3 +1,5 @@
+package com.evidentid;
+
 import android.app.Application;
 
 import com.evidentid.R;
