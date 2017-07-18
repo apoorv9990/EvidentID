@@ -17,6 +17,12 @@ public abstract class BaseRecyclerAdapter<T, VH extends RecyclerView.ViewHolder>
 
     public void setItems(List<T> items) {
         this.items = items;
+        notifyDataSetChanged();
+    }
+
+    public void addItems(List<T> items) {
+        this.items.addAll(items);
+        notifyDataSetChanged();
     }
 
     public T getItem(int position) {

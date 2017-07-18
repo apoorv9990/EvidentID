@@ -10,8 +10,11 @@ public class Observation {
     private Date date;
     @SerializedName("utcdate")
     private Date utcDate;
-    private String tempm;
-    private String tempi;
+
+    @SerializedName("tempm")
+    private String minTemp;
+    @SerializedName("tempi")
+    private String maxTemp;
 
     public Date getDate() {
         return date;
@@ -29,19 +32,19 @@ public class Observation {
         this.utcDate = utcDate;
     }
 
-    public String getTempm() {
-        return tempm;
+    public String getMinTemp() {
+        return minTemp;
     }
 
-    public void setTempm(String tempm) {
-        this.tempm = tempm;
+    public void setMinTemp(String minTemp) {
+        this.minTemp = minTemp;
     }
 
-    public String getTempi() {
-        return tempi;
+    public String getMaxTemp() {
+        return maxTemp;
     }
 
-    public void setTempi(String tempi) {
-        this.tempi = tempi;
+    public void setMaxTemp(String maxTemp) {
+        this.maxTemp = maxTemp;
     }
 }
